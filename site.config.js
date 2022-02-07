@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'ReSource Finance Blog',
-  domain: 'localhost',
+  domain: 'blog.resource.finance',
   author: 'ReSource Finance',
 
   // open graph metadata (optional)

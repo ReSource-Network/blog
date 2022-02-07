@@ -1,3 +1,12 @@
-import { ErrorPage } from 'components'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
-export default ErrorPage
+export default function ErrorPage() {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.replace('/')
+  })
+
+  return null
+}

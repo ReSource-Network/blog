@@ -1,3 +1,12 @@
-import { Page404 } from 'components'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
-export default Page404
+export default function Custom404Page() {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.replace('/')
+  })
+
+  return null
+}

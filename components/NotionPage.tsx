@@ -21,12 +21,12 @@ import useDarkMode from 'use-dark-mode'
 import { CustomFont } from './CustomFont'
 import { Footer } from './Footer'
 import { Loading } from './Loading'
-import { Page404 } from './Page404'
 import { PageActions } from './PageActions'
 import { PageHead } from './PageHead'
 import { PageSocial } from './PageSocial'
 import { ReactUtterances } from './ReactUtterances'
 import styles from './styles.module.css'
+import { useEffect } from 'react'
 
 const Equation = dynamic(() =>
   import('react-notion-x').then((notion) => notion.Equation)
@@ -61,10 +61,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const keys = Object.keys(recordMap?.block || {})
   const block = recordMap?.block?.[keys[0]]?.value
-
-  if (error || !site || !keys.length || !block) {
-    return <Page404 site={site} pageId={pageId} error={error} />
-  }
 
   const title = getBlockTitle(block, recordMap) || site.name
 
