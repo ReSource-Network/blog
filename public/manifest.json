@@ -1,36 +1,31 @@
 {
-  "name": "Transitive Bullshit",
-  "short_name": "Transitive BS",
+  "name": "ReSource Finance",
+  "short_name": "ReSource Finance",
   "icons": [
     {
-      "src": "/favicon-16x16.png",
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo@64.png",
       "type": "image/png",
-      "sizes": "16x16"
+      "sizes": "64X64"
     },
     {
-      "src": "/favicon-32x32.png",
+      "src": "logo@192.png",
       "type": "image/png",
-      "sizes": "32x32"
+      "sizes": "192x192"
     },
     {
-      "src": "/favicon-96x96.png",
+      "src": "logo@512.png",
       "type": "image/png",
-      "sizes": "96x96"
+      "sizes": "512x512"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "logo@1024.png",
       "type": "image/png",
-      "sizes": "180x180"
-    },
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "sizes": "1024x1024"
     }
   ],
   "theme_color": "#F898B9",
